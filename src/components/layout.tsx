@@ -115,7 +115,7 @@ export function Layout() {
           </ul>
 
           <p className="text-sm text-gray-300">
-            © 2025 Projeto HC — Todos os direitos reservados
+            © 2025 Impacta hub — Todos os direitos reservados
           </p>
         </div>
       </footer>
