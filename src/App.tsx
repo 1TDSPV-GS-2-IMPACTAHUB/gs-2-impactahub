@@ -3,6 +3,7 @@ import { Layout } from "./components/layout";
 import { Inicial } from "./pages/home";
 import { Integrantes } from "./pages/Integrantes";
 import { AddCadastro } from "./pages/add-cadastro";
+import { Perfil } from "./pages/perfil";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           {/* Footer */}
           <Route path="/integrantes" element={<Integrantes />} />
           <Route path="/Cadastro" element={<AddCadastro />} />
+          <Route path="/perfil" element={<Perfil />} />
         </Route>
       </Routes>
     </BrowserRouter>
