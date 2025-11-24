@@ -1,11 +1,13 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Layout } from "./components/layout";
-import { Inicial } from "./pages/home";
+import Inicial from "./pages/home";
 import { Integrantes } from "./pages/Integrantes";
 import { AddCadastro } from "./pages/add-cadastro";
 import { Perfil } from "./pages/perfil";
 import { Entrar } from "./pages/entrar";
 import { Iniciar } from "./pages/iniciar";
+import Conteudos from "./pages/conteudos";
+
 
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
           <Route path="/perfil" element={<Perfil />} />
           <Route path="/entrar" element={<Entrar />} />
           <Route path="/iniciar" element={<Iniciar />} />
+          <Route path="/conteudo" element={<Conteudos />} />
+
         </Route>
       </Routes>
     </BrowserRouter>
