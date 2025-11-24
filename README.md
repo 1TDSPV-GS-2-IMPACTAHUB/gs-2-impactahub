@@ -1,73 +1,88 @@
-# React + TypeScript + Vite
+# 🚀 ImpactaHub – Plataforma de Atualização Profissional
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O **ImpactaHub** é uma plataforma desenvolvida para conectar profissionais de diversas áreas ao universo da tecnologia, oferecendo conteúdos, cursos e materiais voltados às áreas de interesse de cada usuário. O sistema permite o cadastro de perfis, listagem, exclusão e exibição personalizada de conteúdos tecnológicos.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Status do Projeto
+🟢 **Em desenvolvimento** – funcionalidades principais implementadas e novas features em construção.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📚 Sumário
+1. [Sobre o Projeto](#-sobre-o-projeto)
+2. [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+3. [Instalação](#-instalação)
+4. [Como Usar](#-como-usar)
+5. [Estrutura de Pastas](#-estrutura-de-pastas)
+6. [Endpoints / Rotas Principais](#-endpoints--rotas-principais)
+7. [Autores e Créditos](#-autores-e-créditos)
+8. [Screenshots](#-screenshots--demonstração)
+9. [Contato](#-contato)
+10. [Links Importantes](#-links-importantes)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📖 Sobre o Projeto
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+A ideia do ImpactaHub é impactar profissionais que desejam se atualizar tecnologicamente.  
+O usuário informa sua **área de atuação** e **interesses**, e o sistema o conecta a conteúdos relevantes, como:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Novas tecnologias
+- Automação
+- Notícias da área
+- Cursos recomendados
+- Tendências de engenharia e TI
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+A plataforma serve como ponte entre a formação do profissional e o mercado tecnológico atual.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠 Tecnologias Utilizadas
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### **Frontend**
+- React + Vite
+- TypeScript
+- TailwindCSS
+- React Hook Form
+- Zod (validações)
+- React Router DOM
+
+### **Estruturas de pastas**
+src/
+ ├── api/
+ │    └── cadastro.ts
+ ├── assets/
+ ├── components/
+ │    ├── header.tsx
+ │    ├── footer.tsx
+ │    ├── perfil-card.tsx
+ │    └── ...
+ ├── hooks/
+ ├── pages/
+ │    ├── Home.tsx
+ │    ├── Cadastro.tsx
+ │    ├── Perfil.tsx
+ │    └── Conteudos.tsx
+ ├── schemas/
+ │    └── cadastroSchema.ts
+ ├── types/
+ │    └── cadastro.ts
+ ├── App.tsx
+ ├── main.tsx
+ └── index.css
+
+### **Backend**
+- Java (API hospedada em Render)
+
+### **Deploy / Infra**
+- Vercel / Netlify (frontend)
+- Render (backend)
+
+---
+
+## 📥 Instalação
+
+### 1. Clonar o repositório
+```bash
+git clone https://github.com/1TDSPV-GS-2-IMPACTAHUB/gs-2-impactahub.git
