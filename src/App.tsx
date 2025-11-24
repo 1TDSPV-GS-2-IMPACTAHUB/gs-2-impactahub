@@ -4,6 +4,7 @@ import { Inicial } from "./pages/home";
 import { Integrantes } from "./pages/Integrantes";
 import { AddCadastro } from "./pages/add-cadastro";
 import { Perfil } from "./pages/perfil";
+import { Entrar } from "./pages/entrar";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/integrantes" element={<Integrantes />} />
           <Route path="/Cadastro" element={<AddCadastro />} />
           <Route path="/perfil" element={<Perfil />} />
+          <Route path="/entrar" element={<Entrar />} />
         </Route>
       </Routes>
     </BrowserRouter>
